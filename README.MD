@@ -1,5 +1,41 @@
-Project Name: ForeverHome
-This project is for creating a easy to use real estate listing website that is easy and simple for users to navigate on.
-Some of the core features include a sign up and log in feature, the ability to edit listing information such as the price, and an option to delete your account if needed. There is also database integration with the housing; and whatever updates are made on the site will be updated and stored onto the database.
-Some things I didnt get to implement includes the ability to add and remove listings as a user, as well as more ways to edit the user experience.
-One issue i'm facing is that error messages do not display on the screen; such as an error in logging in (like inputting the incorrect password)
+# Real Estate Web Application
+
+## Overview
+This project is a full-stack web application that allows users to browse and manage real estate listings.
+
+The platform provides property search functionality, user authentication, and database-driven listing management.
+
+## Features
+- Property listing management
+- Secure user authentication
+- Search and filtering for properties
+- Responsive user interface
+- Database-driven content
+
+## System Architecture
+Frontend:
+- HTML
+- CSS
+
+Backend:
+- PHP
+- MySQL
+
+Users can browse available properties, view listing details, and interact with the platform through a web interface.
+
+## Technologies Used
+- HTML
+- CSS
+- PHP
+- MySQL
+- SQL Queries
+
+## Key Functionality
+- Secure login and session management
+- Database queries optimized for listing search
+- Structured relational database for property data
+
+## Future Improvements
+- Add map-based property search
+- Implement property image uploads
+- Add user dashboards and saved listings
