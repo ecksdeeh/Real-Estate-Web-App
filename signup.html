@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <img src="logo.png" alt="Logo" class="logo" />
+
+  <main class="form-container">
+    <h1>Create Account</h1>
+    <form action="signup.php" method="POST" novalidate>
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" required>
+
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" required>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Sign Up</button>
+
+      <p class="error-message">
+        <?php if (!empty($_GET['error'])) echo htmlspecialchars($_GET['error']); ?>
+      </p>
+    </form>
+
+    <button class="google-btn">
+      <img src="google.png" alt="Sign in with Google" />
+    </button>
+
+    <p>Already have an account? <a href="login.html">Log in</a></p>
+  </main>
+</body>
+</html>

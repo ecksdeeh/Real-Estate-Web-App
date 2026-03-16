@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <img src="logo.png" alt="Logo" class="logo" />
+
+  <main class="form-container">
+    <h1>Welcome To ForeverHome! Log in Below:</h1>
+    <form action="login.php" method="POST" novalidate>
+      <label for="username_or_email">Username or Email</label>
+      <input type="text" id="username_or_email" name="username_or_email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Log In</button>
+
+      <p class="error-message">
+        <?php if (!empty($_GET['error'])) echo htmlspecialchars($_GET['error']); ?>
+      </p>
+    </form>
+
+    <p class="alt-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+  </main>
+</body>
+</html>
